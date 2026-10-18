@@ -1,0 +1,12 @@
+/* Sundae Jam: a mint-cold evening with strawberry in the glow, the colours of the scoops themselves.
+   Only colour tokens live here; layout comes from the shared kk.css. */
+:root {
+  --dusk-0: #0f1d1d;
+  --dusk-1: #16292a;
+  --dusk-2: #24403e;
+  --plum: #5a4148;
+  --glow: rgba(245, 143, 154, 0.30);
+  --accent: #bfe8d4;
+  --teal: #bfe8d4;
+}
+.sundae { width: min(100%, 380px); height: auto; }
