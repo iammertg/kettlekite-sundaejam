@@ -1,11 +1,11 @@
-/* Sundae Jam: a mint-cold evening with strawberry in the glow, the colours of the scoops themselves.
-   Only colour tokens live here; layout comes from the shared kk.css. */
+/* Sundae Jam: a mint-cold evening with strawberry in the light, the colours of the scoops themselves.
+   Only colours live here; layout comes from the shared kk.css and game.css. */
 :root {
-  --dusk-0: #0f1d1d;
-  --dusk-1: #16292a;
-  --dusk-2: #24403e;
-  --plum: #5a4148;
-  --glow: rgba(245, 143, 154, 0.30);
+  --bg: #0b1716;
+  --hero-1: #2f7a6c;
+  --hero-2: #163a34;
+  --glow: rgba(245, 143, 154, 0.3);
+  --tint: rgba(127, 224, 200, 0.12);
+  --sister-tint: rgba(242, 160, 180, 0.16);
   --accent: #bfe8d4;
-  --teal: #bfe8d4;
 }

@@ -2,54 +2,132 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sundae Jam</title>
 <meta name="description" content="Clear the counter, serve the sundaes: a dessert puzzle for iPhone, by Kettlekite.">
-<meta name="theme-color" content="#0f1d1d">
+<meta name="theme-color" content="#0b1716">
+<meta property="og:title" content="Sundae Jam">
+<meta property="og:description" content="Clear the counter, serve the sundaes: a dessert puzzle for iPhone.">
+<meta property="og:image" content="https://sundaejam.kettlekite.com/assets/media/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/assets/icon.png" type="image/png">
 <link rel="apple-touch-icon" href="/assets/icon.png">
 <link rel="preload" href="/assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/fonts/fonts.css">
 <link rel="stylesheet" href="/assets/kk.css">
+<link rel="stylesheet" href="/assets/game.css">
 <link rel="stylesheet" href="/assets/theme.css">
 </head>
 <body>
-<header class="wrap bar">
-  <a class="brand" href="/"><img src="/assets/icon.png" alt="" width="36" height="36">Sundae Jam</a>
+<header class="bar">
+  <a class="brand" href="/"><img src="/assets/icon.png" alt="" width="34" height="34">Sundae Jam</a>
   <nav class="nav" aria-label="Site">
+    <a href="#how">How it plays</a>
+    <a href="#tricks">The counter</a>
     <a href="/support">Support</a>
-    <a href="/privacy">Privacy</a>
   </nav>
 </header>
 
 <main>
-  <section class="wrap hero">
-    <div>
-      <h1>Clear the counter. Serve the sundaes.</h1>
-      <p class="lede">A dessert puzzle for iPhone. Tap a scoop and it slides off the counter, straight into the glass that wants its flavour.</p>
-      <div class="actions">
-        <span class="pill ghost">Coming soon to the App Store</span>
-        <a href="/support">Get help</a>
+  <section class="g-hero">
+    <h1 class="g-name">Sundae Jam</h1>
+    <div class="g-scene" aria-hidden="true">
+      <img class="float" src="/assets/media/desserts/cherry.webp" alt="" style="--x:6%;--y:30%;--w:6%;--d:1.8;--r:-14deg">
+      <img class="float" src="/assets/media/desserts/scoop_strawberry.webp" alt="" style="--x:22%;--y:42%;--w:8.5%;--d:1.3;--r:-8deg">
+      <img class="float" src="/assets/media/desserts/waffle.webp" alt="" style="--x:8%;--y:56%;--w:11%;--d:1.0;--r:-14deg">
+      <img class="float" src="/assets/media/desserts/waferroll.webp" alt="" style="--x:30%;--y:64%;--w:9%;--d:1.6;--r:24deg">
+      <img class="float" src="/assets/media/desserts/scoop_blueberry.webp" alt="" style="--x:36%;--y:44%;--w:5%;--d:0.6;--r:10deg">
+      <img class="float" src="/assets/media/desserts/sundae.webp" alt="" style="--x:63%;--y:38%;--w:11%;--d:0.8;--r:6deg">
+      <img class="float" src="/assets/media/desserts/scoop_pistachio.webp" alt="" style="--x:85%;--y:30%;--w:8%;--d:1.5;--r:-6deg">
+      <img class="float" src="/assets/media/desserts/brownie.webp" alt="" style="--x:71%;--y:62%;--w:9%;--d:0.9;--r:12deg">
+      <img class="float" src="/assets/media/desserts/scoop_orange.webp" alt="" style="--x:88%;--y:50%;--w:6.5%;--d:0.7;--r:-10deg">
+      <img class="float" src="/assets/media/desserts/banana.webp" alt="" style="--x:58%;--y:76%;--w:9%;--d:1.2;--r:-22deg">
+    </div>
+    <div class="g-device"><div class="phone"><video src="/assets/media/demo.mp4" poster="/assets/media/tap.jpg" autoplay muted loop playsinline aria-label="A level of Sundae Jam being played"></video></div></div>
+    <div class="g-copy wrap">
+      <div>
+        <p class="g-lede">Clear the counter. Serve the sundaes.</p>
+        <p class="g-sub">A dessert puzzle for iPhone.</p>
+      </div>
+      <div class="g-cta">
+        <div class="actions"><span class="btn soon">Coming soon to the App Store</span></div>
+        <a class="help" href="/support">Get help</a><br>
+        <a class="studio-mark" href="https://kettlekite.com"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 3 L56 26 L32 61 Z" fill="#5fa59a"/><path d="M32 3 L8 26 L32 61 Z" fill="#f0a92e"/></svg>A Kettlekite game</a>
       </div>
     </div>
-    <div class="stage">
-      <div class="phone"><img src="/assets/level.jpg" alt="Level 33 of Sundae Jam: a counter packed with ice-cream scoops, a banana, a waffle and a padlocked scoop above three glass sundae bowls and the prep tray." width="506" height="1100"></div>
+  </section>
+
+  <section class="g-section wrap" id="how" aria-labelledby="how-title">
+    <div class="g-head rise">
+      <h2 id="how-title">How it plays</h2>
+      <p>Read the counter, then tap. No timers: play at your own pace.</p>
+    </div>
+    <ol class="beats">
+      <li class="beat rise" style="--tilt:-2deg"><div class="shot"><img src="/assets/media/tap.jpg" alt="Level 18: a counter of scoops with arrows, the hint Tap a dessert to scoop it out." loading="lazy"></div>
+        <h3>Tap a dessert</h3><p>Every dessert has an arrow. If its way is clear, it slides off the counter into the glass that wants its flavour.</p></li>
+      <li class="beat rise" style="--tilt:1.5deg"><div class="shot"><img src="/assets/media/tray.jpg" alt="Level 38 with two bananas waiting in the prep tray." loading="lazy"></div>
+        <h3>Use the tray</h3><p>Desserts no glass wants yet wait in a five-place prep tray. A tap on a blocked dessert costs a heart.</p></li>
+      <li class="beat rise" style="--tilt:-1deg"><div class="shot"><img src="/assets/media/win.jpg" alt="Victory screen with three stars and the gems earned." loading="lazy"></div>
+        <h3>Serve them all</h3><p>Fill every glass and the counter is clear. Wins on the first try grow your Sundae Streak.</p></li>
+    </ol>
+  </section>
+
+  <section class="g-section wrap" id="tricks" aria-labelledby="tricks-title">
+    <div class="g-head rise">
+      <h2 id="tricks-title">Four tricks on the counter.</h2>
+      <p>They arrive one at a time, each on a dessert you can reach long before you need it, so every one changes a decision.</p>
+    </div>
+    <div class="tricks">
+      <article class="trick rise"><img src="/assets/media/mech-frozen.jpg" alt="Two desserts in blocks of ice marked 9 and 4." loading="lazy">
+        <div><h3>Frozen desserts</h3><p>Ice holds a dessert in place. It thaws as others leave the counter: the number counts down to zero.</p></div></article>
+      <article class="trick rise"><img src="/assets/media/mech-twins.jpg" alt="A pair of cherries on one stem sitting on a scoop." loading="lazy">
+        <div><h3>Twin cherries</h3><p>Two cherries on one stem need two places at once, so plan room for both.</p></div></article>
+      <article class="trick rise"><img src="/assets/media/mech-padlock.jpg" alt="A padlocked dessert among scoops and a banana." loading="lazy">
+        <div><h3>Key and padlock</h3><p>A padlocked dessert opens only when its key dessert has left the counter.</p></div></article>
+      <article class="trick rise"><img src="/assets/media/mech-turntable.jpg" alt="Desserts standing on a round turntable in the counter." loading="lazy">
+        <div><h3>Turntables</h3><p>Tap a blocked dessert on a turntable and the table turns instead, for a move, until its way out lines up.</p></div></article>
+    </div>
+    <div class="orders rise" aria-label="Desserts in the game">
+      <img src="/assets/media/desserts/scoop_vanilla.webp" alt="" loading="lazy">
+      <img src="/assets/media/desserts/scoop_chocolate.webp" alt="" loading="lazy">
+      <img src="/assets/media/desserts/chocobar.webp" alt="" loading="lazy">
+      <img src="/assets/media/desserts/sundae.webp" alt="Sundae" loading="lazy">
+      <img src="/assets/media/desserts/banana.webp" alt="" loading="lazy">
+      <img src="/assets/media/desserts/waffle.webp" alt="" loading="lazy">
+      <img src="/assets/media/desserts/scoop_strawberry.webp" alt="" loading="lazy">
+    </div>
+    <p class="quiet rise" style="text-align:center;margin-top:2rem">Orders grow from scoop colours to whole desserts: sundaes, banana splits, waffle bowls and brownie sundaes.</p>
+  </section>
+
+  <section class="g-section levels" id="levels" aria-labelledby="levels-title">
+    <div class="wrap">
+      <div class="g-head rise">
+        <h2 id="levels-title">Two hundred levels.</h2>
+        <p>With hard and super-hard ones, boosters, a daily gift and a journey to climb. Every level is checked solvable before it ships.</p>
+      </div>
+    </div>
+    <div class="strip" aria-label="Screens from across the game">
+      <figure><img src="/assets/media/l038.jpg" alt="Level 38." loading="lazy"></figure>
+      <figure><img src="/assets/media/home.jpg" alt="The journey map at level 64." loading="lazy"></figure>
+      <figure><img src="/assets/media/l198.jpg" alt="Level 198, a tall counter." loading="lazy"></figure>
+      <figure><img src="/assets/media/tap.jpg" alt="Level 18." loading="lazy"></figure>
+      <figure><img src="/assets/media/win.jpg" alt="Victory at level 50." loading="lazy"></figure>
+      <figure><img src="/assets/media/tray.jpg" alt="Level 38 with the prep tray in use." loading="lazy"></figure>
     </div>
   </section>
 
-  <section class="wrap section split">
-    <h2>How it plays</h2>
-    <div class="body">
-      <p>Scoops, bananas, wafer rolls, waffles and brownies are packed on a dessert counter. A dessert slides out only when nothing sits on top of it or blocks its way, and whatever was underneath comes free once it leaves. Desserts no glass wants yet wait in a five-place prep tray, so don't let it fill up.</p>
-      <p>Tapping a blocked dessert costs a heart; one that slides out costs nothing. 200 levels, from relaxing to truly tricky, and every one is checked solvable. No timers: play at your own pace.</p>
+  <section class="g-section wrap" aria-labelledby="calm-title">
+    <div class="calm rise">
+      <h2 id="calm-title">Nothing to sign up for.</h2>
+      <div>
+        <p>No account, no ads and no tracking. Your progress stays on your iPhone. Purchases go through the App Store, where Screen Time and Ask to Buy can limit them.</p>
+        <p><a href="/privacy">Read the privacy policy</a></p>
+      </div>
     </div>
-  </section>
-
-  <section class="wrap section split">
-    <h2>For parents</h2>
-    <div class="body">
-      <p><strong>No account, no ads and no analytics.</strong> Progress stays on the iPhone. Purchases go through the App Store, and Screen Time and Ask to Buy can limit them. The <a href="/privacy">privacy policy</a> has the details.</p>
-    </div>
+    <a class="sister rise" href="https://vanityjam.kettlekite.com">
+      <img src="/assets/media/vanity-icon.png" alt="" width="72" height="72">
+      <span><strong>Vanity Jam</strong><span>Its sister game tidies the messiest makeup drawer instead.</span></span>
+    </a>
   </section>
 </main>
 
@@ -60,9 +138,9 @@
       <li><a href="/support">Support</a></li>
       <li><a href="/privacy">Privacy policy</a></li>
       <li><a href="/terms">Terms of use</a></li>
-      <li><a href="https://vanityjam.kettlekite.com">Vanity Jam, its sister game</a></li>
     </ul>
   </div>
 </footer>
+<script src="/assets/game.js" defer></script>
 </body>
 </html>
