@@ -1,0 +1,2 @@
+# app-ads.txt for sundaejam.kettlekite.com: the ad networks allowed to sell ad space in Kettlekite games (Mert Can Gözükara)
+google.com, pub-7812913740075493, DIRECT, f08c47fec0942fa0
