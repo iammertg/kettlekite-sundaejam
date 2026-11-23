@@ -16,6 +16,7 @@
   .tries { display: grid; gap: 0.75rem; margin: 1.5rem 0 2rem; }
   .tries .btn { width: 100%; justify-content: space-between; }
   .tries .btn span { font-weight: 400; opacity: 0.75; }
+  .tries .note { margin: -0.35rem 0 0.4rem; font-size: 0.95rem; opacity: 0.8; }
 </style>
 </head>
 <body>
@@ -27,10 +28,14 @@
 <h1>Reklam denemesi</h1>
 <p>Sundae Jam için üç kısa oynanabilir reklam. Her biri yarım dakika kadar sürüyor.</p>
 <p class="quiet">Telefonu dik tut, sesi aç. Sırayla oyna. Sonda PLAY FREE'ye basarsan App Store açılır; bu normal, geri dön ve sıradakine geç.</p>
+<p class="quiet">Üçü de aynı levelle açılıyor; fark "1 SPACE LEFT! Which one?" anından sonra çıkıyor. Reklamı görecek kişi bunlardan yalnız birini görür, biz hangisinin daha çok indirttiğini ölçeceğiz.</p>
 <div class="tries">
   <a class="btn solid" href="/playtest/1/">Reklam 1 <span>oyna</span></a>
+  <p class="note">Leveli sonuna kadar oynarsın, kazanırsın.</p>
   <a class="btn solid" href="/playtest/2/">Reklam 2 <span>oyna</span></a>
+  <p class="note">Seçimden hemen sonra "oyunda bitir" diye kesilir.</p>
   <a class="btn solid" href="/playtest/3/">Reklam 3 <span>oyna</span></a>
+  <p class="note">Seçimde vanilyalıyı al: tepsi dolar, KEEP GOING ile 2 yer daha alıp bitirirsin. Doğru olanı alırsan Reklam 1 gibi gider.</p>
 </div>
 </main>
 </body>
